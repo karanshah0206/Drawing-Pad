@@ -104,4 +104,32 @@ function init () {
             }
         };
     };
+
+    // Rectangle Tool
+    tools.rect = function () {
+        var tool = this;
+        this.started = false;
+        this.mousedown = function (ev) {
+            tools.started = true;
+            tool.x0 = ev._x;
+            tool.y0 = ev._y;
+        };
+        this.mousemove = function (ev) {
+            if (!tool.started) {return;}
+            var x = Math.min(ev._x, tool.x0);
+            var y = Math.min(ev._y, tool.y0);
+            var w = Math.abs(ev._x, tool.x0);
+            var h = Math.abs(ev._h, tool.h0);
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            if (!w || !h) {return;}
+            context.strokeRect(x, y, w, h);
+        };
+        this.mouseup = function (ev) {
+            if (tool.started) {
+                tool.mousemove(ev);
+                tool.started = false;
+                img_update();
+            }
+        };
+    };
 }
