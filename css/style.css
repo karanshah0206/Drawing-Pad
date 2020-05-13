@@ -36,3 +36,10 @@ body {
     overflow: hidden;
     background-color: transparent;
 }
+
+#tempCanvas {
+    position: absolute;
+    height: 532px;
+    width: 897px;
+    overflow: hidden;
+}
