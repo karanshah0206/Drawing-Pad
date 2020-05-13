@@ -42,7 +42,7 @@ function init () {
         return;
     }
     tool_select.addEventListener('change', ev_tool_change, false);
-    if (toools[tool_default]) {
+    if (tools[tool_default]) {
         tool = new tools[tool_default]();
         tool_select.value = tool_default;
     }
