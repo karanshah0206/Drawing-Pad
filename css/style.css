@@ -26,3 +26,13 @@ body {
     padding: 14px 0px 75px 14px;
     cursor: crosshair;
 }
+
+#drawingCanvas {
+    height: 532px;
+    width: 897px;
+    position: absolute;
+    border: none;
+    color: #ffffff;
+    overflow: hidden;
+    background-color: transparent;
+}
