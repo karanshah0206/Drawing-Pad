@@ -132,4 +132,31 @@ function init () {
             }
         };
     };
+
+    // Line Tool
+    tools.line = function () {
+        var tool = this;
+        this.started = false;
+        this.mousedown = function (env) {
+            tool.started = true;
+            tool.x0 = ev._x;
+            tool.y0 = ev._y;
+        };
+        this.mousemove = function (env) {
+            if (!tool.started) {return;}
+            context.clearRect(0, 0, canvas.width, canvas.height);
+            context.beginPath();
+            context.moveTo(tool.x0, tool.y0);
+            context.lineTo(ev._x, ev._y);
+            context.stroke();
+            context.closePath();
+        };
+        this.mouseup = function (env) {
+            if (tool.started) {
+                tool.mousemove(env);
+                tool.started = false;
+                img_update();
+            }
+        };
+    };
 }
