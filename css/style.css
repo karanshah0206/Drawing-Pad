@@ -1,3 +1,4 @@
+/* General */
 * {
     margin: 0;
     padding: 0;
@@ -15,9 +16,10 @@ body {
     position: relative;
     width: 960px;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 75px;
 }
 
+/* Board */
 #blackboard {
     background-color: #545454;
     width: 924px;
@@ -42,4 +44,17 @@ body {
     height: 532px;
     width: 897px;
     overflow: hidden;
+}
+
+/* Tool Selector */
+#selector {
+    position: absolute;
+    z-index: 3;
+    margin-top: -30px;
+}
+
+select {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    background-color: #eaeaea;
 }
