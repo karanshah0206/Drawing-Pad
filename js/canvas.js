@@ -1,5 +1,10 @@
 var context, contexto, canvas, canvaso, container, tool, tool_default='chalk', tool_select, func, tools={};
 
+if (window.addEventListener) {
+    window.addEventListener('load', init(), false);
+}
+
+
 function init () {
     // Getting Canvas Into canvaso Variable
     canvaso = document.getElementById('drawingCanvas');
@@ -137,12 +142,12 @@ function init () {
     tools.line = function () {
         var tool = this;
         this.started = false;
-        this.mousedown = function (env) {
+        this.mousedown = function (ev) {
             tool.started = true;
             tool.x0 = ev._x;
             tool.y0 = ev._y;
         };
-        this.mousemove = function (env) {
+        this.mousemove = function (ev) {
             if (!tool.started) {return;}
             context.clearRect(0, 0, canvas.width, canvas.height);
             context.beginPath();
@@ -151,9 +156,9 @@ function init () {
             context.stroke();
             context.closePath();
         };
-        this.mouseup = function (env) {
+        this.mouseup = function (ev) {
             if (tool.started) {
-                tool.mousemove(env);
+                tool.mousemove(ev);
                 tool.started = false;
                 img_update();
             }
