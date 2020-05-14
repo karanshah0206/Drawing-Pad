@@ -30,8 +30,6 @@ body {
 }
 
 #drawingCanvas {
-    height: 532px;
-    width: 897px;
     position: absolute;
     border: none;
     color: #ffffff;
