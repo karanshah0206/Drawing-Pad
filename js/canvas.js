@@ -1,8 +1,6 @@
 var context, contexto, canvas, canvaso, tool, tool_default='chalk', func, tools={};
 
-if (window.addEventListener) {
-    window.addEventListener('load', init(), false);
-}
+if(window.addEventListener) { window.addEventListener('load', function () {
 
 function init () {
     // Getting Canvas Into canvaso Variable
@@ -74,7 +72,7 @@ function ev_canvas (ev) {
     }
 }
 
-// Tool Selectro Value Changed
+// Tool Selector Value Changed
 function ev_tool_change (ev) {
     if (tools[this.value]) {
         tool = new tools[this.value]();
@@ -165,3 +163,5 @@ tools.line = function () {
         }
     };
 };
+
+init();}, false);}
