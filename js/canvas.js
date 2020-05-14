@@ -4,7 +4,6 @@ if (window.addEventListener) {
     window.addEventListener('load', init(), false);
 }
 
-
 function init () {
     // Getting Canvas Into canvaso Variable
     canvaso = document.getElementById('drawingCanvas');
