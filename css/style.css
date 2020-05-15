@@ -119,3 +119,20 @@ select {
     height: 50px;
     z-index: 3;
 }
+
+/* Stroke Functions */
+#strokeSubtract {
+    position: absolute;
+    top: 436px;
+    left: -13px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#strokeAdd {
+    position: absolute;
+    top: 436px;
+    left: 5px;
+    z-index: 3;
+    cursor: pointer;
+}
