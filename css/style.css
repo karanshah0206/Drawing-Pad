@@ -107,3 +107,15 @@ select {
     top: 620px;
     left: 560px;
 }
+
+/* Duster */
+#duster {
+    cursor: pointer;
+    position: absolute;
+    background-image: url(../img/eraser.png);
+    left: 737px;
+    top: 600px;
+    width: 140px;
+    height: 50px;
+    z-index: 3;
+}
