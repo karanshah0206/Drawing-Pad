@@ -56,3 +56,54 @@ select {
     font-size: 12px;
     background-color: #eaeaea;
 }
+
+/* Chalk Colors */
+#whiteChalk {
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+    top: 620px;
+    left: 80px;
+}
+#redChalk {
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+    top: 620px;
+    left: 160px;
+}
+#orangeChalk {
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+    top: 620px;
+    left: 240px;
+}
+#yellowChalk {
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+    top: 620px;
+    left: 320px;
+}
+#greenChalk {
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+    top: 620px;
+    left: 400px;
+}
+#blueChalk {
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+    top: 620px;
+    left: 480px;
+}
+#pinkChalk {
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+    top: 620px;
+    left: 560px;
+}
