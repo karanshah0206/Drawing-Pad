@@ -136,3 +136,21 @@ select {
     z-index: 3;
     cursor: pointer;
 }
+
+#strokeSelector {
+    background-color: #202020;
+    width: 43px;
+    height: 158px;
+    position: absolute;
+    top: 456px;
+    left: -18px;
+    z-index: 3;
+    margin: 0;
+    padding: 0;
+}
+
+.stroke {
+    cursor: pointer;
+    margin-left: 6px;
+    margin-top: 4px;
+}
