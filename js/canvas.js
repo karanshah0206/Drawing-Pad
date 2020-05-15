@@ -54,6 +54,12 @@ function init () {
     canvas.addEventListener('mousedown', ev_canvas, false);
     canvas.addEventListener('mousemove', ev_canvas, false);
     canvas.addEventListener('mouseup', ev_canvas, false);
+
+    context.beginPath();
+    context.moveTo(1, 1);
+    context.lineTo(1, 1);
+    context.stroke();
+    img_update();
 }
 
 // Getting Mouse Position
