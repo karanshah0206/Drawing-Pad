@@ -162,10 +162,12 @@ select {
     right: 17px;
 }
 
-#convertpngbtn {
+#downloadImage {
     float: right;
-    margin-right: 40px;
+    margin-right: 0px;
+    margin-top: 10px;
     position: relative;
     z-index: 3;
+    cursor: pointer;
     overflow: hidden;
 }
