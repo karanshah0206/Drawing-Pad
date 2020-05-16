@@ -171,3 +171,8 @@ tools.line = function () {
 };
 
 init();}, false);}
+
+// Save Canvas To Image
+document.getElementById('canvasSaver').addEventListener('click', () => {
+    var imgdCanvas = document.getElementById('drawingCanvas').toDataURL("image/png");
+})
