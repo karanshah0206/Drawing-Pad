@@ -157,17 +157,15 @@ select {
 
 /* Save */
 #saveWrapper {
+    cursor: pointer;
     position: absolute;
-    right: 0px;
-    background-color: orange;
+    right: 17px;
 }
 
 #convertpngbtn {
     float: right;
     margin-right: 40px;
-    margin-top: -10px;
     position: relative;
     z-index: 3;
-    cursor: pointer;
     overflow: hidden;
 }
