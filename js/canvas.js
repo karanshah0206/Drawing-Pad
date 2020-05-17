@@ -193,3 +193,19 @@ var colorPalette = [
     "#000000","#00FFFF","#000000","#9900CC","#9933CC","#9966CC","#9999CC","#99CCCC","#99FFCC","#CC00CC","#CC33CC","#CC66CC","#CC99CC","#CCCCCC","#CCFFCC","#FF00CC","#FF33CC","#FF66CC","#FF99CC","#FFCCCC","#FFFFCC",
     "#000000","#FF00FF","#000000","#9900FF","#9933FF","#9966FF","#9999FF","#99CCFF","#99FFFF","#CC00FF","#CC33FF","#CC66FF","#CC99FF","#CCCCFF","#CCFFFF","#FF00FF","#FF33FF","#FF66FF","#FF99FF","#FFCCFF","#FFFFFF"
 ];
+
+window.addEventListener('load', () => {
+    document.getElementById('colorTable').style.display = 'none';
+
+    document.getElementById('color').addEventListener ('click', () => {
+        if(document.getElementById('colorTable').style.display != 'none') {
+            document.getElementById('colorTable').style.display = 'none';
+        }
+        else {
+            document.getElementById('colorTable').style.display = 'unset';
+            canvas.addEventListener('mousedown', () => {
+                document.getElementById('colorTable').style.display = 'none'
+            });
+        }
+    });
+});
