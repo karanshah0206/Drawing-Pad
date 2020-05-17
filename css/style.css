@@ -171,3 +171,30 @@ select {
     cursor: pointer;
     overflow: hidden;
 }
+
+/* Color Swatch */
+#colorTable {
+    width: 231px;
+    height: 132px;
+    position: absolute;
+    margin-top: 8px;
+    z-index: 4;
+    right: 80px;
+    background-color: #000000;
+    display: none;
+    cursor: pointer;
+}
+
+.color {
+    position: relative;
+    height: 7px;
+    width: 7px;
+    float: left;
+    padding: 1px;
+    margin: 1px;
+}
+
+.color:hover {
+    border: 1px solid #ffffff;
+    margin: 0px;
+}
