@@ -60,6 +60,8 @@ function init () {
     context.lineTo(1, 1);
     context.stroke();
     img_update();
+
+    LoadColorTable();
 }
 
 // Getting Mouse Position
@@ -204,8 +206,26 @@ window.addEventListener('load', () => {
         else {
             document.getElementById('colorTable').style.display = 'unset';
             canvas.addEventListener('mousedown', () => {
-                document.getElementById('colorTable').style.display = 'none'
+                document.getElementById('colorTable').style.display = 'none';
             });
+            document.getElementById('colorTable').addEventListener('click', () => {
+                document.getElementById('colorTable').style.display = 'none';
+            })
         }
     });
 });
+
+function LoadColorTable () {
+    for(var i=0; i<colorPalette.length; i++) {
+        var colorDiv = document.createElement('div');
+        colorDiv.className = 'color';
+        colorDiv.id = 'colorSwatch' + i;
+        colorDiv.style.backgroundColor = colorPalette[i];
+        colorDiv.setAttribute('onclick', 'setColor(id);');
+        document.getElementById('colorTable').appendChild(colorDiv);
+    };
+}
+
+function setColor (id) {
+    context.strokeStyle = document.getElementById(id).style.backgroundColor;
+}
