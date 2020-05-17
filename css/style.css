@@ -198,3 +198,13 @@ select {
     border: 1px solid #ffffff;
     margin: 0px;
 }
+
+#color {
+    position: absolute;
+    right: 17px;
+    margin-right: 0px;
+    margin-top: 40px;
+    z-index: 3;
+    cursor: pointer;
+    overflow: hidden;
+}
