@@ -177,9 +177,9 @@ select {
     width: 231px;
     height: 132px;
     position: absolute;
-    margin-top: 8px;
+    margin-top: 50px;
     z-index: 4;
-    right: 80px;
+    right: 40px;
     background-color: #000000;
     display: none;
     cursor: pointer;
