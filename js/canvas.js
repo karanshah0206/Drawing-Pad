@@ -254,3 +254,9 @@ function setColor (id) {
 document.getElementById('clearPad').addEventListener('click', () => {
     location.reload();
 });
+
+// Adding Year In Footer
+var date = new Date;
+window.addEventListener('load', () => {
+    document.getElementById('copyYear').innerHTML = date.getFullYear();
+})
