@@ -180,15 +180,24 @@ document.getElementById('canvasSaver').addEventListener('click', () => {
     document.getElementById('downloadImage').href = imgdCanvas;
 });
 
-// Chalk Tip Width
-window.addEventListener('load', () => {
-    document.getElementById('strokeNumber').addEventListener('change', () => {
-        context.lineWidth = document.getElementById('strokeNumber').value;
-    });
+// Chalk Tip Widt
+document.getElementById('strokeNumber').addEventListener('change', () => {
+    context.lineWidth = document.getElementById('strokeNumber').value;
 });
+
 function tipChanger (size) {
     context.lineWidth = size;
     document.getElementById('strokeNumber').value = size;
+}
+
+// Eraser
+var originalTip = 1;
+var eraseFlag = false;
+function erase () {
+    eraseFlag = true;
+    originalTip = context.lineWidth;
+    context.strokeStyle = '#424242';
+    tipChanger(30);
 }
 
 // Color Swatch
@@ -242,8 +251,6 @@ function setColor (id) {
 }
 
 // Clear Canvas
-window.addEventListener('load', () => {
-    document.getElementById('clearPad').addEventListener('click', () => {
-        location.reload();
-    })
+document.getElementById('clearPad').addEventListener('click', () => {
+    location.reload();
 });
