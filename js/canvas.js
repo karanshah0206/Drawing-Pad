@@ -1,7 +1,7 @@
 var context, contexto, canvas, canvaso, tool, tool_default='chalk', func, tools={};
 
+// Canvas Initialization
 if(window.addEventListener) { window.addEventListener('load', function () {
-
 function init () {
     // Getting Canvas Into canvaso Variable
     canvaso = document.getElementById('drawingCanvas');
@@ -229,3 +229,10 @@ function LoadColorTable () {
 function setColor (id) {
     context.strokeStyle = document.getElementById(id).style.backgroundColor;
 }
+
+// Clear Canvas
+window.addEventListener('load', () => {
+    document.getElementById('clearPad').addEventListener('click', () => {
+        location.reload();
+    })
+});
