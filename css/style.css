@@ -208,3 +208,13 @@ select {
     cursor: pointer;
     overflow: hidden;
 }
+
+/* Clear Canvas */
+#clearPad {
+    position: absolute;
+    right: 17px;
+    margin-right: 0;
+    margin-top: 70px;
+    cursor: pointer;
+    overflow: hidden;
+}
