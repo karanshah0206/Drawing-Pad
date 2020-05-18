@@ -121,6 +121,19 @@ select {
 }
 
 /* Stroke Functions */
+#strokeNumber {
+    position: absolute;
+    width: 43px;
+    top: 436px;
+    right: -5px;
+    z-index: 3;
+    padding: 0;
+    background-color: #202020;
+    color: #ffffff;
+    border: 0;
+    cursor: pointer;
+}
+
 #strokeSelector {
     background-color: #202020;
     width: 43px;
