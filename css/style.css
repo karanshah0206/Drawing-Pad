@@ -25,7 +25,8 @@ body {
     width: 924px;
     height: 565px;
     margin: 0 auto;
-    padding: 14px 0px 0px 14px;
+    padding-top: 14px;
+    padding-left: 50px;
     cursor: crosshair;
 }
 
@@ -124,8 +125,8 @@ select {
 #strokeNumber {
     position: absolute;
     width: 43px;
-    top: 430px;
-    right: -6px;
+    top: 100px;
+    left: 4px;
     z-index: 3;
     padding: 0;
     background-color: #202020;
@@ -141,8 +142,8 @@ select {
     width: 43px;
     height: 158px;
     position: absolute;
-    top: 456px;
-    right: -5px;
+    top: 125px;
+    left: 4px;
     z-index: 3;
     margin: 0;
     padding: 0;
@@ -158,7 +159,7 @@ select {
 #saveWrapper {
     cursor: pointer;
     position: absolute;
-    right: 17px;
+    right: -8px;
 }
 
 #downloadImage {
@@ -178,7 +179,7 @@ select {
     position: absolute;
     margin-top: 50px;
     z-index: 4;
-    right: 40px;
+    right: 13px;
     background-color: #000000;
     display: none;
     cursor: pointer;
@@ -200,7 +201,7 @@ select {
 
 #color {
     position: absolute;
-    right: 17px;
+    right: -8px;
     margin-right: 0px;
     margin-top: 40px;
     z-index: 3;
@@ -211,9 +212,10 @@ select {
 /* Clear Canvas */
 #clearPad {
     position: absolute;
-    right: 17px;
+    right: -8px;
     margin-right: 0;
     margin-top: 70px;
     cursor: pointer;
     overflow: hidden;
+    z-index: 3;
 }
