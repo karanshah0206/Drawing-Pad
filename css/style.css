@@ -23,9 +23,9 @@ body {
 #blackboard {
     background-color: #545454;
     width: 924px;
-    height: 599px;
+    height: 565px;
     margin: 0 auto;
-    padding: 14px 0px 75px 14px;
+    padding: 14px 0px 0px 14px;
     cursor: crosshair;
 }
 
@@ -124,7 +124,7 @@ select {
 #strokeSubtract {
     position: absolute;
     top: 436px;
-    left: -13px;
+    right: 0px;
     z-index: 3;
     cursor: pointer;
 }
@@ -132,7 +132,7 @@ select {
 #strokeAdd {
     position: absolute;
     top: 436px;
-    left: 5px;
+    right: 20px;
     z-index: 3;
     cursor: pointer;
 }
@@ -143,7 +143,7 @@ select {
     height: 158px;
     position: absolute;
     top: 456px;
-    left: -18px;
+    right: -5px;
     z-index: 3;
     margin: 0;
     padding: 0;
