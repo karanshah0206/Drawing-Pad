@@ -43,9 +43,9 @@
             <div id="greenChalk"><img src="img/green.png" width="71" height="17" onclick="context.strokeStyle = '#48ff00';"></div>
             <div id="blueChalk"><img src="img/blue.png" width="71" height="17" onclick="context.strokeStyle = '#001eff';"></div>
             <div id="pinkChalk"><img src="img/pink.png" width="71" height="17" onclick="context.strokeStyle = '#ff00d2';"></div>
-            <div id="duster" onclick="context.strokeStyle = '#424242'; context.lineWidth = '22';"></div>
+            <div id="duster" onclick="context.strokeStyle = '#424242'; tipChanger(30);"></div>
         </div>
-        <input type="number" id="strokeNumber" min="1" max="1000" value="1">
+        <input type="number" id="strokeNumber" min="1" max="300" value="1">
         <div id="strokeSelector">
             <img src="img/stroke1.png" title="1.0" alt="1.0" width="30" height="32" onclick="tipChanger(1);" class="stroke">
             <img src="img/stroke2.png" title="6.0" alt="6.0" width="30" height="32" onclick="tipChanger(6);" class="stroke">
