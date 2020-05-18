@@ -219,3 +219,20 @@ select {
     overflow: hidden;
     z-index: 3;
 }
+
+/* Footer */
+footer {
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: #222;
+    color: #ddd; font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer a {
+    text-decoration: none; color: #bbb; font-style: Arial, Helvetica, sans-serif
+}
