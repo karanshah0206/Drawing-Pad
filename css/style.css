@@ -121,22 +121,6 @@ select {
 }
 
 /* Stroke Functions */
-#strokeSubtract {
-    position: absolute;
-    top: 436px;
-    right: 0px;
-    z-index: 3;
-    cursor: pointer;
-}
-
-#strokeAdd {
-    position: absolute;
-    top: 436px;
-    right: 20px;
-    z-index: 3;
-    cursor: pointer;
-}
-
 #strokeSelector {
     background-color: #202020;
     width: 43px;
