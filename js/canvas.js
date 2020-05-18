@@ -180,6 +180,17 @@ document.getElementById('canvasSaver').addEventListener('click', () => {
     document.getElementById('downloadImage').href = imgdCanvas;
 });
 
+// Chalk Tip Width
+window.addEventListener('load', () => {
+    document.getElementById('strokeNumber').addEventListener('change', () => {
+        context.lineWidth = document.getElementById('strokeNumber').value;
+    });
+});
+function tipChanger (size) {
+    context.lineWidth = size;
+    document.getElementById('strokeNumber').value = size;
+}
+
 // Color Swatch
 var colorPalette = [
     "#000000","#000000","#000000","#000000","#003300","#006600","#009900","#00CC00","#00FF00","#330000","#333300","#336600","#339900","#33CC00","#33FF00","#660000","#663300","#666600","#669900","#66CC00","#66FF00",
