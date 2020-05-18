@@ -124,13 +124,15 @@ select {
 #strokeNumber {
     position: absolute;
     width: 43px;
-    top: 436px;
-    right: -5px;
+    top: 430px;
+    right: -6px;
     z-index: 3;
     padding: 0;
     background-color: #202020;
     color: #ffffff;
     border: 0;
+    padding-left: 1px;
+    height: 20px;
     cursor: pointer;
 }
 
