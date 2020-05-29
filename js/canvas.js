@@ -240,6 +240,7 @@ function LoadColorTable () {
         var colorDiv = document.createElement('div');
         colorDiv.className = 'color';
         colorDiv.id = 'colorSwatch' + i;
+        console.log(colorDiv.id);
         colorDiv.style.backgroundColor = colorPalette[i];
         colorDiv.setAttribute('onclick', 'setColor(id);');
         document.getElementById('colorTable').appendChild(colorDiv);

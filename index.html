@@ -37,13 +37,13 @@
             <canvas id="drawingCanvas" height="532" width="897">
                 Unfortunately the browser you're using doesn't support HTML Canvas feature. Try using Microsoft Edge! Also, make sure Javascript is enabled.
             </canvas>
-            <div id="whiteChalk"><img src="img/white.png" onclick="context.strokeStyle = '#ffffff'; if(eraseFlag==true){tipChanger(originalTip); eraseFlag = false;};"></div>
-            <div id="redChalk"><img src="img/red.png" width="71" height="17" onclick="context.strokeStyle = '#f00000'; if(eraseFlag==true){tipChanger(originalTip); eraseFlag = false;};"></div>
-            <div id="orangeChalk"><img src="img/orange.png" width="71" height="17" onclick="context.strokeStyle = '#ff9600'; if(eraseFlag==true){tipChanger(originalTip); eraseFlag = false;};"></div>
-            <div id="yellowChalk"><img src="img/yellow.png" width="71" height="17" onclick="context.strokeStyle = '#fff600'; if(eraseFlag==true){tipChanger(originalTip); eraseFlag = false;};"></div>
-            <div id="greenChalk"><img src="img/green.png" width="71" height="17" onclick="context.strokeStyle = '#48ff00'; if(eraseFlag==true){tipChanger(originalTip); eraseFlag = false;};"></div>
-            <div id="blueChalk"><img src="img/blue.png" width="71" height="17" onclick="context.strokeStyle = '#001eff'; if(eraseFlag==true){tipChanger(originalTip); eraseFlag = false;};"></div>
-            <div id="pinkChalk"><img src="img/pink.png" width="71" height="17" onclick="context.strokeStyle = '#ff00d2'; if(eraseFlag==true){tipChanger(originalTip); eraseFlag = false;};"></div>
+            <div id="whiteChalk"><img id="whiteChalkInner" style="background-color: #ffffff;" src="img/white.png" onclick="setColor('whiteChalkInner');"></div>
+            <div id="redChalk"><img id="redChalkInner" style="background-color: #f00000;" src="img/red.png" width="71" height="17" onclick="setColor('redChalkInner');"></div>
+            <div id="orangeChalk"><img id="orangeChalkInner" style="background-color: #ff9600;" src="img/orange.png" width="71" height="17" onclick="setColor('orangeChalkInner');"></div>
+            <div id="yellowChalk"><img id="yellowChalkInner" style="background-color: #fff600;" src="img/yellow.png" width="71" height="17" onclick="setColor('yellowChalkInner');"></div>
+            <div id="greenChalk"><img id="greenChalkInner" style="background-color: #48ff00;" src="img/green.png" width="71" height="17" onclick="setColor('greenChalkInner');"></div>
+            <div id="blueChalk"><img id="blueChalkInner" style="background-color: #001eff;" src="img/blue.png" width="71" height="17" onclick="setColor('blueChalkInner');"></div>
+            <div id="pinkChalk"><img id="pinkChalkInner" style="background-color: #ff00d2;" src="img/pink.png" width="71" height="17" onclick="setColor('pinkChalkInner');"></div>
             <div id="duster" onclick="erase();"></div>
         </div>
         <input type="number" id="strokeNumber" min="1" max="300" value="1">
