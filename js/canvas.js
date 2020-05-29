@@ -248,6 +248,9 @@ function LoadColorTable () {
 
 function setColor (id) {
     context.strokeStyle = document.getElementById(id).style.backgroundColor;
+    if (eraseFlag==true) {
+        tipChanger(originalTip); eraseFlag = false;
+    }
 }
 
 // Clear Canvas
