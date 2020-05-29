@@ -85,6 +85,7 @@ function ev_tool_change (ev) {
     if (tools[this.value]) {
         tool = new tools[this.value]();
     }
+    originalTool = document.getElementById('selector').value;
 }
 
 // Overlap Temporary Canvas On Original
@@ -192,12 +193,19 @@ function tipChanger (size) {
 
 // Eraser
 var originalTip = 1;
+var originalTool = 'chalk';
 var eraseFlag = false;
 function erase () {
     eraseFlag = true;
     originalTip = context.lineWidth;
+    originalTool = document.getElementById('selector').value;
     context.strokeStyle = '#424242';
     tipChanger(30);
+    document.getElementById('selector').value = 'chalk';
+    if (tools['chalk']) {
+        tool = new tools['chalk']();
+    }
+    document.getElementById('selector').disabled = true;
 }
 
 // Color Swatch
@@ -251,6 +259,11 @@ function setColor (id) {
     if (eraseFlag==true) {
         tipChanger(originalTip); eraseFlag = false;
     }
+    document.getElementById('selector').value = originalTool;
+    if (tools[originalTool]) {
+        tool = new tools[originalTool]();
+    }
+    document.getElementById('selector').disabled = false;
 }
 
 // Clear Canvas
